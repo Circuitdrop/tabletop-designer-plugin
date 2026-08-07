@@ -1,0 +1,11 @@
+{
+  "name": "tabletop-designer",
+  "displayName": "Tabletop Designer",
+  "version": "0.1.0",
+  "description": "An expert card and board game design subagent -- mechanics, economies, balance, playtesting, and rules writing.",
+  "author": {
+    "name": "Logan Adams"
+  },
+  "keywords": ["game-design", "tabletop", "card-games", "board-games", "balance", "playtesting"],
+  "license": "MIT"
+}
