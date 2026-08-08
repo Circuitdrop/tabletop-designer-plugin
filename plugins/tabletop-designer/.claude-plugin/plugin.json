@@ -1,8 +1,8 @@
 {
   "name": "tabletop-designer",
   "displayName": "Tabletop Designer",
-  "version": "0.2.0",
-  "description": "An expert card and board game design subagent -- mechanics, economies, balance, playtesting, and rules writing.",
+  "version": "0.3.0",
+  "description": "Expert card/board game design subagent, plus an iterative game-code review loop (game-code-reviewer + game-code-review-loop skill) that checks code changes for bugs, inefficiencies, and mistakes.",
   "author": {
     "name": "Logan Adams"
   },
