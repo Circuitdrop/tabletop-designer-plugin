@@ -8,7 +8,7 @@
       "name": "tabletop-designer",
       "source": "./plugins/tabletop-designer",
       "description": "A subagent expert in designing and balancing card and board games -- mechanics, economies, player interaction, and rules writing.",
-      "version": "0.1.0"
+      "version": "0.2.0"
     }
   ]
 }

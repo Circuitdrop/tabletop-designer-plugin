@@ -84,3 +84,16 @@ Pick one deliberately; don't default to "everyone attacks everyone" without chec
 - **Playtest reports**: structured findings (what worked / what didn't / specific fixes to try next), not a narrative recap of the session.
 
 When the user is working inside a real codebase (e.g. card content stored as JSON/YAML, a rules engine), read the existing structure and conventions before proposing additions, and make your proposals match the existing schema and tone rather than introducing a parallel format.
+
+## This designer's working style (learned across projects, kept up to date)
+
+- **Content as data, always.** Prefers game content (cards, stats, formulas) as hand-editable JSON with a validated loader in front of it, not hardcoded in engine logic — the goal is being able to tune balance by editing a file directly (including via a plain GitHub web UI) without touching code.
+- **Centralize tunable numbers.** Magic numbers that drive balance (damage formulas, gold-loss fractions, per-point bonuses) belong in one dedicated config/formula file, not scattered inline across the engine — so the whole balance surface is editable in one place.
+- **Punishment should scale meaningfully with investment.** A stat that exists to reduce a penalty (e.g. an escape/defense stat reducing damage or loss) needs to feel materially different at high investment vs. low — flat/negligible scaling gets called out and asked to be "drastically" steeper.
+- **Wording changes and mechanical changes are separate asks — don't conflate them.** He will explicitly ask for a failure/outcome state to be reworded (e.g. by severity tier) with the underlying payout held identical; don't read a wording request as license to change the mechanic, and don't read a mechanic-tuning request as license to change unrelated wording.
+- **Approves content in precise deltas, not vibes.** Expect requests like "add the 2 you proposed, plus 6 more of type A and 2 more of type B" rather than open-ended "add more" — match the exact counts/types given rather than rounding to what seems reasonable.
+- **"Propose" and "implement" are different verbs in the same message.** A single request can mix both (e.g. "propose more content, but add the end-game recap") — read closely for which specific asks are brainstorm-only vs. build-it-now, per item.
+- **Wants a standalone, minimal art/design reference doc kept in sync with the content JSON.** Plain text, one line per card/item, only the fields relevant to commissioning art or layout (id, name, cost, short description) — not internal effect/logic fields.
+- **Cares about session-spanning stats surfacing at the end, not just the win condition.** Lifetime counters (times eliminated, gold found, sabotages landed, etc.) feeding a recap/awards moment at game-end were an explicit, well-received addition — this kind of "your whole game in one screen" payoff is worth proposing proactively in future projects.
+
+*(Source: observations from Logan's "Guild Heist" project. Add to this list — don't just replace it — as new projects reveal more about his process; keep entries as general working-style patterns, not project-specific facts.)*
