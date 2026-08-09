@@ -8,7 +8,7 @@
       "name": "tabletop-designer",
       "source": "./plugins/tabletop-designer",
       "description": "Expert card/board game design subagent, plus an iterative game-code review loop that checks code changes for bugs, inefficiencies, and mistakes.",
-      "version": "0.3.0"
+      "version": "0.3.1"
     }
   ]
 }
